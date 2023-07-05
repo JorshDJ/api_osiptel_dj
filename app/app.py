@@ -24,15 +24,14 @@ datos = {
         {"id": 9, "descripcion": "Otros (DETALLAR)"},
     ],
     "empresas": [
-        {"id": 0, "nombre": "[Seleccione]"},
-        {"id": 20, "nombre": "ENTEL PERU S.A."},
-        {"id": 21, "nombre": "AMERICA MOVIL PERU S.A.C."},
-        {"id": 22, "nombre": "TELEFONICA DEL PERU S.A.A."},
-        {"id": 23, "nombre": ""},
-        {"id": 24, "nombre": "VIETTEL PERU S.A.C."},
-        {"id": 25, "nombre": "FLASH SERVICIOS PERU S.R.L."},
-        {"id": 26, "nombre": "DOLPHIN TELECOM DEL PERU S.A.C."},
-        {"id": 27, "nombre": "GUINEA MOBILE S.A.C."},
+        {"id": 0, "nombre": "[Seleccione]", "pagina_web": ""},
+        {"id": 20, "nombre": "ENTEL PERU S.A.", "pagina_web": "http://www.entel.pe"},
+        {"id": 21, "nombre": "AMERICA MOVIL PERU S.A.C.", "pagina_web": "http://www.claro.com.pe"},
+        {"id": 22, "nombre": "TELEFONICA DEL PERU S.A.A.", "pagina_web": "http://www.telefonica.com.pe"},
+        {"id": 24, "nombre": "VIETTEL PERU S.A.C.", "pagina_web": "http://www.bitel.com.pe"},
+        {"id": 25, "nombre": "FLASH SERVICIOS PERU S.R.L.", "pagina_web": "http://www.flashmobile.pe"},
+        {"id": 26, "nombre": "DOLPHIN TELECOM DEL PERU S.A.C.", "pagina_web": "http://www.dolphin.pe"},
+        {"id": 27, "nombre": "GUINEA MOBILE S.A.C.", "pagina_web": "http://www.guinea.pe"}
     ],
     "marcas": [
         {"id": -1, "nombre": "[Seleccione]"},
@@ -104,6 +103,54 @@ datos = {
         {"id": 65, "nombre": "SONY ERICSON"},
         {"id": 73, "nombre": "E"},
         {"id": 75, "nombre": "BITEL"},
+    ],
+
+    "preguntas_frecuentes": [
+        {
+            "id": 1,
+            "pregunta": "¿Las empresas operadoras pueden suspender mi servicio si es que lo utilizo en un equipo terminal con IMEI inválido?",
+            "respuesta": "Sí, la empresa operadora debe suspender tu servicio de telefonía móvil si este se encuentra vinculado a un equipo terminal con IMEI inválido."
+        },
+        {
+            "id": 2,
+            "pregunta": "Si me suspendieron mi servicio de telefonía móvil por haberlo utilizado con un equipo terminal con IMEI inválido, ¿qué puedo hacer?",
+            "respuesta": "El abonado o titular del servicio puede solicitar la reactivación del servicio hasta los treinta (30) días calendario luego de la ejecución de la suspensión del servicio, para lo cual debe acercarse en forma presencial a una oficina o centro de atención de la empresa operadora que brinda el servicio y presentar por única vez una Declaración Jurada de Compromiso, en la que conste su compromiso de no utilizar equipos terminales móviles con IMEI inválido."
+        },
+        {
+            "id": 3,
+            "pregunta": "Al momento de solicitar la reactivación del servicio ante la empresa operadora, ¿debo llevar conmigo el equipo terminal móvil con IMEI inválido?",
+            "respuesta": "No. El equipo terminal móvil con IMEI inválido ya fue bloqueado y no es necesario que lo lleves. Lo que debes llevar al acercarte a la oficina o centro de atención de la empresa operadora que te brinda el servicio es tu nuevo equipo terminal el cual deberá contar con un IMEI válido."
+        },
+        {
+            "id": 4,
+            "pregunta": "¿En cuánto tiempo se reactivará mi servicio?",
+            "respuesta": "La empresa operadora debe proceder a reactivar tu servicio en un plazo máximo de veinticuatro (24) horas, luego de haber recibido la citada Declaración Jurada, y validado satisfactoriamente que cuentas con un equipo terminal móvil con IMEI válido."
+        },
+        {
+            "id": 5,
+            "pregunta": "¿Qué sucede si no solicito la reactivación del servicio dentro del plazo de 30 días calendario de haberse ejecutado la suspensión del servicio?",
+            "respuesta": "En caso haya vencido el plazo de treinta (30) días calendario sin que hayas solicitado la reactivación del servicio, la empresa operadora debe proceder a dar de baja la línea del servicio público móvil que fue suspendida por utilizar de forma reiterada equipos terminales móviles con IMEI inválidos."
+        },
+        {
+            "id": 6,
+            "pregunta": "Si luego de haberse presentado la Declaración Jurada de Compromiso, el abonado vuelve a utilizar su servicio móvil con un equipo terminal móvil con IMEI inválido, ¿Qué sucedería?",
+            "respuesta": "En caso se detecte que el abonado ha vuelto a utilizar el servicio vinculado a uno o más equipos terminales móviles con IMEI inválido, de forma posterior a la firma de la Declaración Jurada de Compromiso, la empresa operadora debe proceder a realizar de forma inmediata la baja de la línea del servicio público móvil vinculado a dicho equipo terminal."
+        },
+        {
+            "id": 7,
+            "pregunta": "¿Si he utilizado equipos terminales móviles con IMEI inválidos, tendré problemas para contratar servicios posteriormente?",
+            "respuesta": "Para el caso de los abonados cuyas líneas fueron suspendidas por haber sido detectados utilizando un servicio vinculado a uno o más equipos terminales móviles con IMEI inválido en más de una oportunidad, sólo se les permitirá la contratación de servicios públicos móviles en oficinas o centros de atención de las empresas operadoras."
+        },
+        {
+            "id": 8,
+            "pregunta": "¿Las contrataciones de servicios de telefonía móvil sólo en oficinas será aplicado indefinidamente, considerando que he utilizado el servicio con equipos terminales móviles con IMEI inválido?",
+            "respuesta": "No. Para el caso de los abonados cuyas líneas fueron suspendidas por utilizar de forma reiterada equipos terminales móviles con IMEI inválido, este requisito aplica por un año, contado a partir del día siguiente de la detección del último uso de un equipo terminal móvil con IMEI inválido."
+        },
+        {
+            "id": 9,
+            "pregunta": "¿Qué acciones deberán realizar las empresas operadoras luego de realizar las suspensiones o baja del servicio de telefonía móvil por haberse utilizado con un equipo terminal con IMEI inválido?",
+            "respuesta": "Las empresas operadoras deberán remitir al OSIPTEL la relación de líneas reactivadas y/o dadas de baja. Asimismo, el OSIPTEL podrá informar sobre estos hechos al Ministerio Público para las investigaciones que correspondan."
+        }
     ]
 }
 
@@ -154,6 +201,12 @@ def get_empresas():
 @app.route('/problemas_detectados', methods=['GET'])
 def get_problemas_detectados():
     return jsonify(datos["problemas_detectados"])
+
+
+##Preguntas Frecuentes
+@app.route('/preguntas_frecuentes', methods=['GET'])
+def get_preguntas_frecuentess():
+    return jsonify(datos["preguntas_frecuentes"])
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
